@@ -1,0 +1,159 @@
+
+h3{
+
+    margin-left: 60px;
+}
+h4{
+    font-size: 30px;
+}
+h6{
+    font-size: 15px;
+
+}
+
+
+.contenedor-docente{
+    display: flex;
+    padding:  40px;
+    background-color: rgb(206, 214, 242);  
+    margin: 50px;
+  
+
+}
+
+.datos-docente{
+    margin-left: 40px;
+ 
+}
+.icono-docente{
+    font-size: 60px;
+  
+}
+
+.calificacion-docente{
+    color: rgba(184, 196, 77, 0.775);
+}
+
+
+.contenedor-detalle{
+    display: flex;
+    justify-content: left;  
+
+}
+
+.foto-curso{
+    margin-top: 30px;
+    margin-left: 200px;
+    text-align: center;
+    border-style: solid linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(142,169,191,0.8519782913165266) 100%, rgba(0,212,255,1) 100%);;
+
+}
+
+.datos-curso{
+    margin-top: 30px;
+    margin-left: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height : 35px;
+    
+
+}
+
+.titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.inscripcion{
+    font-size:25px;
+    border: solid linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(142,169,191,0.8519782913165266) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+    margin-block-start: 20px;
+    color: #fff;
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(142,169,191,0.8519782913165266) 100%, rgba(0,212,255,1) 100%);
+}
+
+.contenidos-clase{
+    font-size: 12px;
+}
+
+.grilla-sin-contenido{
+    background-color: #fff;
+    border: solid gray 1px;
+    position: relative;
+    border-radius: 5px;
+    width: 400px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.grilla-sin-contenido p{
+   
+    top: 2px;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+}
+
+
+
+.grilla-contenido{
+    background-color: lightgrey;
+    border: solid gray 1px;
+    position: relative;
+    border-radius: 5px;
+    width: 400px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+
+.grilla-contenido p{
+    position: absolute;
+    top: 2px;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    
+
+}
+
+
+.icono-inicial{
+    font-size: 20px;
+    margin-left: 2px;
+}
+.clock{
+    position: absolute;
+    top: 2px;
+    margin-left: 300px;
+    background-size: contain;
+}
+
+    .check{
+        position: absolute;
+        top: 2px;
+        margin-left: 370px;
+        background-size: contain;
+        color: green;
+        font-size: 20px;
+       
+    
+ 
+}
+
+.not-check{
+    position: absolute;
+    top: 2px;
+    margin-left: 370px;
+    background-size: contain;
+    font-size: 20px;
+    color: rgba(82, 77, 77, 0.781);
+   
+
+
+}
+
+
+
+

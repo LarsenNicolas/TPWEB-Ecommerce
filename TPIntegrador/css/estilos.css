@@ -82,7 +82,7 @@ h2{
 
 .menu ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
    
 }
 
@@ -329,7 +329,7 @@ footer {
     padding-bottom: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    
+
 }
 
 .footer-columnas{
@@ -375,3 +375,4 @@ footer {
 .footer-columnas p,a{
     color: black;
 }
+

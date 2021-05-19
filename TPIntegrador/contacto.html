@@ -5,118 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/estilos-contacto.css">
+    <link rel="stylesheet" href="css/stylecontacto.css">
     <title>Contacto</title>
 </head>
 <body>
-    <header>
+     <header>
         <section class="contenedor-header">   
-        <article > 
-            <img  class="logo" src="img/Logo.png" alt="Logo">
-        </article>
-        <!--
-        <div>
-           <form action="http://lineadecodigo.com/search" method="get">
-                <label for="busqueda">¿Qué quieres buscar?</label>
-                <input type="tipocursos" name="buscador" placeholder=" Buscar"/>
-              
-                <input type="submit" value="" src="img/lupa.png"/>
-              </form>
-        </div>-->
-         <article class="buscador" >
-            <input  list="tipocursos" name="buscador" placeholder=" Buscar" />
-            <datalist id="tipocursos">
-                <option  value="Frontend">
-                 <option value="Backend">
-                <option  value="Diseño UX/UI">
-          </datalist>  
-          
-          </article>
-        <article >
-            <img class="carrito" src="img/carro-de-compras.png" alt="Logo">
-        </article>      
+            <article > 
+                <img  class="logo" src="img/Logo.png" alt="Logo">
+            </article>
+            <article>
+                <form action="" method="get" class="contenedor-buscador">
+                    <input type="tipo-de-cursos" name="buscador" placeholder=" Buscar" class="tipo-de-cursos"/>
+                    <datalist id="tipo-de-cursos">
+                        <option  value="Frontend">
+                         <option value="Backend">
+                        <option  value="Diseño UX/UI">
+                    </datalist>  
+                    <button class="boton-buscador"></button>
+                  </form>
+            </article>
 
-    </section>
-    <div >
-        <img class="cantidad-carrito" src="img/numero-carrito.png" alt="Logo">
-    </div>
-       <div class="separador"></div>
-       <nav class="menu">
-        <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="#">CURSOS</a></li>
-            <li><a href="#">CALENDARIO</a></li>
-            <li><a href="#">GIFTCARD</a></li>
-            <li><a href="#">INSCRIPCIÓN</a></li>
-            <li><a href="#">CONTACTO</a></li>
-        </ul>
-    </nav>
-</div>
+            <article > 
+                <img  class="carrito" src="img/carrito-de-compras.png" alt="Carrito">
+                <img class="cantidad-carrito" src="img/numero-carrito.png" alt="Cantidad Carrito">
+            </article>
+        </section>
+        <div class="separador"></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#">CURSOS</a></li>
+                    <li><a href="#">CALENDARIO</a></li>
+                    <li><a href="#">GIFTCARD</a></li>
+                    <li><a href="#">INSCRIPCIÓN</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+            </nav>
+        <div class="separador2"></div> 
     </header>
 
-    <main>
-        <section class="datos-contacto">
-            <article class="form">
-                <form action="#" method="GET">
-                    <label for="nombre">Nombre y Apellido:</label><br>
-                    <input type="name" id="nombre" name="nombre" required placeholder=" Ingrese su nombre y apellido" style="WIDTH: 450px; HEIGHT: 30px"> <br><br>
-        
-                    <label for="correo">Email:</label><br>
-                    <input type="email" id="correo" name="correo" required placeholder=" Email" style="WIDTH: 450px; HEIGHT: 30px" > <br><br>
+   <div class="contacto">
+             <div id="formulario" class="formularioContacto">
+                  <form action="#" method="get" class="form-contacto" onsubmit="return validar()">
+                       <H2>Contacto</H2>
+                      <label for="nombreyapellido">Nombre y Apellido:</label>
+                      <br>
+                      <input type="text" name="nombreyapellido" id="nombreyapellido"  >
+                      <br><br>
+                 
+                      <label for="miemail">E-mail:</label>
+                      <br>
+                      <input type="email" name="miemail" id="miemail">
+                      <br> <br>
+               
+                      <label for="telefono">Teléfono:</label>
+                      <br>
+                      <input type="tel" name="telefono" id="telefono">
+                      <br><br>
+                
+                      <label for="consulta">Consulta:</label>
+                      <br>
+                      <textarea rows="10" cols="50" name="cuerpomensaje"  id="consultas" onkeyup="contarCaracteres()" maxlength="1000">
+                      </textarea>  
+                      <p>Te quedan: <span id="caracteres"></span>/1000 caracteres</p>
+                      <input type="submit" value="Enviar">
+                      <div id="mensaje" class="error">
 
-                    <label for="correo">Teléfono:</label><br>
-                    <input type="tel" id="tel" name="tel" placeholder=" Teléfono" style="WIDTH: 450px; HEIGHT: 30px"> <br><br>
-        
-                    <label for="consulta">Consulta:</label> <br>
-                    <textarea name="consulta" id="consulta" cols="62" rows="10" maxlength="10"></textarea> <br><br>
-        
-                    <label for="provincia">Provincia</label>
-                    <select name="provincia" id="provincia">
-                        <option value="1">Buenos Aires</option>
-                        <option value="2">CABA</option>
-                    </select>
-                </form>
-        
-            </article>
-            <article class="contacto">
-                <div>
-                   <h3>Datos de Contacto</h2> 
-                   <h2></h2> 
-                </div>
-            </article>
-        </section>
-        <section class="contenedor-mapa">
-            <article class="ubicacion">
-                <!--Mapa-->
-                <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.374026901457!2d-58.56505388519267!3d-34.670508468541286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1620258357949!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.374026901457!2d-58.56505388519267!3d-34.670508468541286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1620258357949!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"></iframe>
-           </article>
-        </section>
-           
-   
+                      </div>
+                   </form>
+             </div>
+             
 
-      
-        
+             <div id="datos" class="datosContacto">
+                 <h2>Datos de contacto</h2>
+                     <p>Dirección: </p>
+                     <p>Telefono:</p>
+                     <p>Celular:</p>
+                     <p>Email:  </p>
+                     <p>Web:</p>
+             </div>
+     
+             <div class="ubicacion-mapa" >
+                     <h2>UBICACIÓN</h2>
+                         <div class="map-google">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3281.3967836263278!2d-58.5649705053716!3d-34.669933981986034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1604083405911!5m2!1ses!2sar"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                         </div>
+             </div>
+        </div>
+    <footer class="footer">
+            <section class="footer-columnas">
+                <article>
+                    <div class="menu-inferior">
+                        <h3>Datos del Grupo:</h3>
+                        <p>Gonzalez, Maria Laura</p>
+                        <p>Loisa, Gaston</p>
+                        <p>Nicolas</p>
+                    </div>
+                </article>
 
+                <article>
+                    <div class="menu-inferior">
+                        <h3>Menu Inferior</h3>
+                        <ul>
+                            <li><a href="calendario.html">Calendario</a></li>
+                            <li><a href="gitfcard.html">Gitf Card</a></li>
+                            <li><a href="inscripcion.html">Inscripcion</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>                   
+                        </ul>
+                    </div>
+                </article>
 
-    </main>
-    <footer>
-        <nav class="footer">
-            <ul>
-                <li>
-                    Gonzalez, Maria Laura<br>
-                    Nicolas<br>
-                    Gastón<br>
-                </li>
-                <li>
-                    menu inferior
-                </li>
-                <li>
-                    <a href="https://www.udemy.com/">Instagram</a>
-                </li>
-            </ul>
-        </nav>
-
-    </footer>
+                <article>
+                    <div class="red-social">                       
+                        <div>
+                            <h3>Redes Sociales</h3>
+                            <a href="about:blank" target="_blank"><img src="img/facebook.png"></a>
+                            <a href="about:blank" target="_blank"><img src="img/gorjeo.png"></a>
+                            <a href="about:blank" target="_blank"><img src="img/instagram.png"></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </footer>
+    
 </body>
 </html>

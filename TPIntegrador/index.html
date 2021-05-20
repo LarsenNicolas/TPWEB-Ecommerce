@@ -11,26 +11,29 @@
 <body>
     <header>
         <section class="contenedor-header">   
-            <article > 
+            <article>
                 <img  class="logo" src="img/Logo.png" alt="Logo">
             </article>
-            <article>
+
+            <article class="search-container">
                 <form action="" method="get" class="contenedor-buscador">
-                    <input list="tipo-de-cursos" name="tipo-de-cursos" placeholder="Buscar" class="tipo-de-cursos"/>
-                    <datalist id="tipo-de-cursos">
-                        <option  value="Frontend">
-                         <option value="Backend">
-                        <option  value="Diseño UX/UI">
-                    </datalist>  
+                    <input list="tipo-de-cursos" name="tipo-de-cursos" placeholder="Buscar" class="data-list-input"/>
                     <button class="boton-buscador"></button>
                   </form>
             </article>
 
-            <article > 
+            <article>
                 <img  class="carrito" src="img/carrito-de-compras.png" alt="Carrito">
                 <img class="cantidad-carrito" src="img/numero-carrito.png" alt="Cantidad Carrito">
             </article>
         </section>
+
+        <datalist id="tipo-de-cursos">
+            <option  value="Frontend">
+            <option value="Backend">
+            <option  value="Diseño UX/UI">
+        </datalist>
+
         <div class="separador"></div>
         <nav class="menu">
             <ul>

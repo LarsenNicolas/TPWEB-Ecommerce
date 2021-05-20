@@ -13,8 +13,8 @@ h2{
     text-align: center;
     padding: 40px;
 }
+
 .contenedor-header{
-    
     background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(142,169,191,0.8519782913165266) 100%, rgba(0,212,255,1) 100%);
     font-size: 16px;
     color: #fff; 
@@ -23,9 +23,12 @@ h2{
     flex-direction: row;
     Justify-content: space-between;
     align-items:center;
-    
-
 }
+
+.search-container {
+    width: 30%;
+}
+
 .logo{
     width:  100px; 
     margin-left: 20px;
@@ -39,27 +42,33 @@ h2{
 
 .contenedor-buscador{
     display: flex;
+    height: 40px;
+    position: relative;
 }
 
-.contenedor-buscador{
-    display: flex;
-}
 .boton-buscador{
     background-image: url(../img/lupa.png);
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 6px;
     background-size: 30px 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fff;
-    border: solid #212121 2px;
-    border-radius: 0px 10px 10px 0px;
+    border: none;
     cursor: pointer;
 }
 
-.tipo-de-cursos{
-    width: 300px;
+.data-list-input{
+    width: 100%;
 }
+
+.data-list-input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
 .cantidad-carrito{
     background-size: 10px;
     width: 15px;
@@ -67,23 +76,20 @@ h2{
     display: block;
     top: 50px;   
     right: 40px;
-
 }
+
 .separador{
     background-color: #000;
     padding: 3px;
-  
 }
 
 .menu{
     background-color: rgb(121, 145, 209);
-
 }
 
 .menu ul{
     display: flex;
     justify-content: center;
-   
 }
 
 .menu li{
@@ -96,7 +102,6 @@ h2{
     color: cornsilk;
     padding: 10px;
     display: inline-block;
-
 }
 
 .menu a:hover{
@@ -108,8 +113,6 @@ h2{
     display: flex;
     justify-content: space-between;
     padding: 50px;
-   
-
 }
 
 .flecha-left{
@@ -135,9 +138,6 @@ h2{
     display: flex;
     justify-content: space-around;
     align-content: center;
-    
-    
-    
 }
 
 .paso1{
@@ -148,12 +148,9 @@ h2{
     border-radius: 20px;
     color: #000;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 .paso2{
-
-   
     background-color: rgb(206, 214, 242);
     width: calc(33% - 100px);
     padding: 50px;
@@ -181,15 +178,11 @@ h2{
 
   }
   .destacados-item {
-
     background-color: rgb(206, 214, 242);   
     text-align: center;
-
     position: relative;
     box-sizing: border-box;
     margin:auto;
-
-
   }
   
   
@@ -201,10 +194,8 @@ h2{
       color: #fff;
       right: 0;
       top: 125px;
-        background-size: contain;
-        font-size: 20px;
-  
-      
+      background-size: contain;
+      font-size: 20px;
   }
 
   .descripcion-header{
@@ -338,7 +329,7 @@ footer {
     padding: 15px;
 
 }
-.footer-columnas p, .footer-columnas h3{
+.footer-columnas p,h3{
     color:white;
 }
 

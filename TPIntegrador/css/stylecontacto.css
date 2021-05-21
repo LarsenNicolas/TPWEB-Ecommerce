@@ -51,11 +51,6 @@ h2{
     width: 500px;
 }
 
-body{
-    background-image:url(../img/fondo-blanco.jpg);
-    background-size: contain;
-   
-}
 .map-google iframe{
     width:100%; 
     border:0;

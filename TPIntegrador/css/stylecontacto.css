@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
 .contacto{
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -28,21 +25,23 @@
 .form-contacto textarea{
     height: auto;
 }
+
 .datosContacto p{
-    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     margin: 5px;
     padding: 4px;
 }
+
 h2{
     border-bottom: solid;
     box-sizing: border-box;
     margin-top: 15px;
     margin-bottom: 15px;
-    font-family: 'Oswald', sans-serif;
     font-size: 25px;
     color: #63708d;
+    padding: 40px 20px 20px 20px;
 }
+
 .datosContacto h2{
     width: 300px;
 }

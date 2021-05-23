@@ -22,7 +22,7 @@
 }
 
 .texto-previa{
-	 display: flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -172,3 +172,14 @@ height: 8px;
 	margin-top: 15px;
 }
 
+.red-social h3{
+    margin-bottom: 10px;
+}
+
+.menu-inferior h3{
+    margin-bottom: 10px;
+}
+
+.menu-inferior h3{
+    margin-bottom: 10px;
+}

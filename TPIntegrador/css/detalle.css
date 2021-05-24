@@ -1,8 +1,5 @@
 
-h3{
 
-    margin-left: 60px;
-}
 h4{
     font-size: 30px;
 }
@@ -52,14 +49,10 @@ h6{
 .datos-curso{
     margin-top: 30px;
     margin-left: 150px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height : 35px;
-    
-
 }
 
 .titulo{
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 .inscripcion{
@@ -81,17 +74,12 @@ h6{
     position: relative;
     border-radius: 5px;
     width: 400px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 .grilla-sin-contenido p{
-   
     top: 2px;
     margin-left: 30px;
     font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif
-
 }
 
 
@@ -102,8 +90,6 @@ h6{
     position: relative;
     border-radius: 5px;
     width: 400px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 
@@ -113,9 +99,6 @@ h6{
     top: 2px;
     margin-left: 30px;
     font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif
-    
-
 }
 
 
@@ -130,16 +113,13 @@ h6{
     background-size: contain;
 }
 
-    .check{
-        position: absolute;
-        top: 2px;
-        margin-left: 370px;
-        background-size: contain;
-        color: green;
-        font-size: 20px;
-       
-    
- 
+.check{
+    position: absolute;
+    top: 2px;
+    margin-left: 370px;
+    background-size: contain;
+    color: green;
+    font-size: 20px;
 }
 
 .not-check{
@@ -149,9 +129,6 @@ h6{
     background-size: contain;
     font-size: 20px;
     color: rgba(82, 77, 77, 0.781);
-   
-
-
 }
 
 

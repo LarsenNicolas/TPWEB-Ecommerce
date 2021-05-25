@@ -53,21 +53,22 @@ h3 {
 
 .contenedor-buscador{
     display: flex;
-    height: 40px;
+    height: 42px;
     position: relative;
 }
 
 .boton-buscador{
     background-image: url(../img/lupa.png);
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     position: absolute;
     top: 5px;
-    right: 6px;
-    background-size: 30px 30px;
+    right: 12px;
+    background-size: 27px 27px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fff;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
 }
@@ -78,6 +79,7 @@ h3 {
 
 .data-list-input{
     width: 100%;
+    border-radius: 20px;
 }
 
 .data-list-input::-webkit-calendar-picker-indicator {
@@ -404,4 +406,12 @@ label {
     position: fixed;
     bottom: 0px;
     width: 100%;
+}
+
+.menu-selected-item {
+    background-color: #FCFCFC;
+}
+
+.menu-selected-item a {
+    color: #63708d;
 }

@@ -6,8 +6,8 @@
 
 .formularioContacto{
     width: 65%;
-
 }
+
 .datosContacto{
     width: 35%;
 }
@@ -19,7 +19,6 @@
 .form-contacto input,textarea{
     margin-top: 5px;
     width: 500px;
-    height: 25px;
 }
 
 .form-contacto textarea{

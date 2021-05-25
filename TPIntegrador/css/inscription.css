@@ -2,6 +2,7 @@
     /*align-items:center;*/
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .form-container {
@@ -9,3 +10,62 @@
     justify-content: space-between;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px 15px 0px;
+}
+
+h2{
+    border-bottom: solid;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #63708d;
+    padding: 40px 20px 20px 20px;
+}
+
+.col-4 {
+    width: 30%;
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+}
+
+.xs {
+    width: 25px;
+}
+
+.container-art {
+    width: 65%;
+}
+
+.delete {
+    background: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.add {
+    background: green;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.price-item-inscription{
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    background-size: contain;
+    text-align: center;
+    width: 10%;
+    align-self: center;
+}

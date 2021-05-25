@@ -19,7 +19,7 @@
                 <article class="search-container">
                     <form action="" method="get" class="contenedor-buscador">
                         <input list="tipo-de-cursos" name="tipo-de-cursos" placeholder="Buscar" class="data-list-input"/>
-                        <button class="boton-buscador"></button>
+                        <a href="detalle.html" class="boton-buscador"></a>
                     </form>
                 </article>
 
@@ -39,7 +39,6 @@
             <nav class="menu">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
-                    <li><a href="#">CURSOS</a></li>
                     <li><a href="calendario.html">CALENDARIO</a></li>
                     <li><a href="giftcard.html">GIFTCARD</a></li>
                     <li><a href="inscription.html">INSCRIPCIÓN</a></li>
@@ -50,23 +49,40 @@
         </header>
         <main>
             <section class="container">
-                <article>
-                    <h2>Titulo del curso</h2>
-                    <h3>Inscripcion</h3>
+                <article class="container-art">
+                    <h2> Inscripcion - {Titulo del curso} </h2>
                     <form action="" method="post" class="form-container">
                         <div class="row">
-                            <input type="text" />
-                            <input type="text" />
-                            <input type="text" />
+                            <p class="col-4">Apellido y nombre</p>
+                            <p class="col-4">Numero de documento</p>
+                            <p class="col-4">E mail</p>
+                            <p class="col-4 xs"></p>
                         </div>
                         <div class="row">
-                            <input type="text" />
-                            <input type="text" />
-                            <input type="text" />
-                        </div><div class="row">
-                            <input type="text" />
-                            <input type="text" />
-                            <input type="text" />
+                            <input type="text" class="col-4 input-text"/>
+                            <input type="text" class="col-4 input-text"/>
+                            <input type="text" class="col-4 input-text"/>
+                            <button class="delete col-4 xs">-</button>
+                        </div>
+                        <div class="row">
+                            <input type="text" class="col-4 input-text"/>
+                            <input type="text" class="col-4 input-text"/>
+                            <input type="text" class="col-4 input-text"/>
+                            <button class="delete col-4 xs">-</button>
+                        </div>
+                        <div class="row">
+                            <input type="text" class="col-4 input-text"/>
+                            <input type="text" class="col-4 input-text"/>
+                            <input type="text" class="col-4 input-text"/>
+                            <button class="delete col-4 xs">-</button>
+                        </div>
+                        <div class="row">
+                            <button class="add col-4 xs">+</button>
+                            <p class="col-4">Agregar persona</p>
+                        </div>
+                        <div class="row">
+                            <p class="price-item-inscription col-4">$12000</p>
+                            <button class="button-medium col-4">Inscribirse</button>
                         </div>
                     </form>
                 </article>

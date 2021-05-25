@@ -72,6 +72,10 @@ h3 {
     cursor: pointer;
 }
 
+.boton-buscador:hover {
+    transform: scale(1.2);
+}
+
 .data-list-input{
     width: 100%;
 }
@@ -175,6 +179,7 @@ h3 {
     box-sizing: border-box;
     margin:auto;
     opacity: 0.8;
+    border-radius: 30px;
   }
 
 .destacados-item:hover {
@@ -212,7 +217,7 @@ h3 {
   .hora-curso{
       position: absolute;
       left: 0;
-      top: 200px;
+      top: 240px;
       font-weight: bold;
       margin: 20px;
       font-size: 20px;
@@ -220,13 +225,11 @@ h3 {
 
   .nombre-curso{
     position: absolute;
-    right: 0;
     top: 180px;
     font-weight: bold;
     margin: 20px;
-    font-size: 20px;
-    text-align: right;
-    color: blue;
+    font-size: 25px;
+    text-align: center;
   }
 
   .ver-detalle{
@@ -239,7 +242,7 @@ h3 {
     margin: 10px;
   }
 
-  .comprar-curso{
+  .button{
     position: absolute;
     right: 0;
     top: 290px;
@@ -254,6 +257,32 @@ h3 {
     border-radius: 10px;
     cursor: pointer;
   }
+
+  .button-large {
+      font-weight: bold;
+      font-size: 15px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(142,169,191,0.8519782913165266) 100%, rgba(0,212,255,1) 100%);
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+  }
+
+.button-medium {
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(142,169,191,0.8519782913165266) 100%, rgba(0,212,255,1) 100%);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 75%;
+}
 
   .medios-de-pago {
     display: flex;    
@@ -353,4 +382,16 @@ footer {
     margin-top: 40px;
     margin-bottom: 40px;
     font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.input-text {
+    height: 30px;
+}
+
+label {
+    font-size: 20px;
 }

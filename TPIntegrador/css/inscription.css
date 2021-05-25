@@ -1,5 +1,4 @@
 .container {
-    /*align-items:center;*/
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -50,6 +49,10 @@ h2{
     cursor: pointer;
 }
 
+.delete:hover {
+    transform: scale(1.2);
+}
+
 .add {
     background: green;
     width: 25px;
@@ -60,7 +63,11 @@ h2{
     cursor: pointer;
 }
 
-.price-item-inscription{
+.add:hover {
+    transform: scale(1.2);
+}
+
+.price-item-inscription {
     font-weight: bold;
     background-color: #000;
     color: #fff;

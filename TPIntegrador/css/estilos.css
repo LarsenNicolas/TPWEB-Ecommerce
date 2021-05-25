@@ -258,6 +258,10 @@ h3 {
     cursor: pointer;
   }
 
+  .button:hover, .button-medium:hover, .button-large:hover {
+      transform: scale(1.1);
+  }
+
   .button-large {
       font-weight: bold;
       font-size: 15px;

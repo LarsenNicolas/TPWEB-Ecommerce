@@ -395,3 +395,9 @@ a {
 label {
     font-size: 20px;
 }
+
+.footer-fixed{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

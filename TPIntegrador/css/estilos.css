@@ -34,6 +34,7 @@ h3 {
     flex-direction: row;
     Justify-content: space-between;
     align-items:center;
+    max-width: 100%;
 }
 
 .search-container {
@@ -88,11 +89,12 @@ h3 {
 
 .cantidad-carrito{
     background-size: 10px;
-    width: 15px;
+    width: 20px;
     position: absolute;
     display: block;
-    top: 50px;   
-    right: 40px;
+    top: 55px;   
+    right: 10px;
+    ;
 }
 
 .separador{
@@ -105,20 +107,20 @@ h3 {
 }
 
 .menu ul{
-    display: flex;
+    
     justify-content: center;
 }
 
 .menu li{
     list-style: none;
-    margin: 0px 35px;
+    text-align: center;
 }
 
 .menu a{
     text-decoration: none;
     color: cornsilk;
     padding: 10px;
-    display: inline-block;
+    display: block;
 }
 
 .menu a:hover{
@@ -126,13 +128,81 @@ h3 {
     background-color: rgb(49, 17, 190);
 }
 
-.contenedor-cursos-iniciales{
+a.desplegable{
+    display: block;
+    width: 47px;
+    height: 47px;
+    background-image: url(../img/hamburger.gif);
+    background-color:  rgb(121, 145, 209);
+    position:fixed;
+    cursor: pointer;
+   
+}
+a.desplegable:hover{
+    background-color:rgb(121, 145, 209);;
+}
+.menu{
+    display:none;
+}
+
+@media screen and (min-width:47em){
+    .menu ul{
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        display:block;
+    }
+    a.desplegable{
+        display: none;
+    }
+}
+
+@media screen and (min-width:60em){
+    .menu ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu{
+        display:block;
+    }
+    a.desplegable{
+        display: none;
+    }
+}
+
+
+/*.contenedor-cursos-iniciales{
     display: flex;
     justify-content: space-between;
     padding: 50px;
+}*/
+@media screen and (min-width:47em){
+    .contenedor-cursos-iniciales{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 50px;
+        max-width: 100%;
+
+    }
+
+    .img-inicial{
+        width:calc (50%-1em);
+    }
 }
 
-.flecha-left{
+@media screen and (min-width:60em){
+
+    .img-inicial{
+        width:calc(33%-1em);
+    }
+}
+
+
+
+/*.flecha-left{
     color: blue;
     display: block;
     font-size: 30px;
@@ -151,13 +221,36 @@ h3 {
     top: 300px;
     cursor: pointer;
 
-}
+}*/
 
-.contenedor-pasos-cursos{
+/*.contenedor-pasos-cursos{
     display: flex;
     justify-content: space-around;
     align-content: center;
+}*/
+
+@media screen and (min-width:47em){
+    .contenedor-pasos-cursos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+
+    }
+
+    article{
+        width:calc (50%-1em);
+    }
 }
+
+@media screen and (min-width:60em){
+
+    article{
+        width:calc(33%-1em);
+    }
+}
+
+
 
 .steps{
     background-color: rgb(206, 214, 242);
@@ -168,18 +261,40 @@ h3 {
     color: #000;
 }
 
-.contenedor-destacados {
+/*.contenedor-destacados {
     display: flex;
     justify-content: space-between;
     padding: 30px;
 
-  }
+  }*/
+
+  @media screen and (min-width:47em){
+    .contenedor-destacados{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px;
+
+    }
+
+    .destacados-item{
+        width:calc (50%-1em);
+    }
+}
+
+@media screen and (min-width:60em){
+
+    .destacados-item{
+        width:calc(33%-1em);
+    }
+}
   .destacados-item {
     background-color: rgb(206, 214, 242);   
     text-align: center;
     position: relative;
     box-sizing: border-box;
     margin:auto;
+    max-width: 100%;
     opacity: 0.8;
     border-radius: 30px;
   }
@@ -298,6 +413,7 @@ h3 {
     align-content: center;
     padding: 60px;
     position: relative;
+    max-width: 100%;
     }
 
 .visa{
@@ -346,6 +462,7 @@ footer {
     color: cornsilk;
     padding-bottom: 15px;
     font-weight: 700;
+    max-width: 100%;
 
 }
 

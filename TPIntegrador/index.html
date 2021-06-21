@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/index.js"></script>
     <title>FormAte</title>
 </head>
 <body>
@@ -24,7 +26,8 @@
 
             <article>
                 <img  class="carrito" src="img/carrito-de-compras.png" alt="Carrito">
-                <img class="cantidad-carrito" src="img/numero-carrito.png" alt="Cantidad Carrito">
+                <!--<img class="cantidad-carrito" src="img/numero-carrito.png" alt="Cantidad Carrito">-->
+                 <p class="cantidad-carrito" id="contador">0</p>
             </article>
         </section>
 
@@ -37,27 +40,28 @@
         <div class="separador"></div>
         <nav class="menu">
             <ul>
-                <li class="menu-selected-item"><a href="index.html">INICIO</a></li>
+                <li><a href="index.html">INICIO</a></li>
                 <li><a href="calendario.html">CALENDARIO</a></li>
                 <li><a href="giftcard.html">GIFTCARD</a></li>
                 <li><a href="inscription.html">INSCRIPCIÓN</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
+        <a class="desplegable"></a>
         <div class="separador2"></div> 
     </header>
     <main>
         <section class="contenedor-cursos-iniciales">
-            <img class="curso1" src="img/curso1.PNG" alt="curso1">
-            <img class="curso2" src="img/curso2.PNG" alt="curso2">
-            <img class="curso3" src="img/curso3.PNG" alt="curso3">
-            <img class="curso4" src="img/curso4.PNG" alt="curso4">
-            <article class="flecha-left">
+            <img class="img-inicial" class="curso1" src="img/curso1.PNG" alt="curso1">
+            <img class="img-inicial" class="curso2" src="img/curso2.PNG" alt="curso2">
+            <img class="img-inicial" class="curso3" src="img/curso3.PNG" alt="curso3">
+            <img class="img-inicial" class="curso4" src="img/curso4.PNG" alt="curso4">
+           <!-- <article class="flecha-left">
                 <i class="fas fa-chevron-circle-left"></i>
             </article>
             <article class="flecha-right">
                 <i class="fas fa-chevron-circle-right"></i>
-            </article>
+            </article>-->
         </section>
         <section class="contenedor-pasos-cursos">
             <article class="steps"><h2>1 -Seleccione el curso que desea</h2></article>

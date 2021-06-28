@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/detalle.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/index.js"></script>
     <title>FormAte</title>
 </head>
 <body>
     <header>
-        <section class="contenedor-header">
+        <section class="contenedor-header">   
             <article>
                 <img  class="logo" src="img/Logo.png" alt="Logo">
             </article>
 
             <article class="search-container">
-                <form action="" method="get" class="contenedor-buscador">
-                    <input list="tipo-de-cursos" name="tipo-de-cursos" placeholder=" Buscar" class="data-list-input"/>
-                    <a href="detalle.html" class="boton-buscador"></a>
-                </form>
+               <form action="#" method="get" class="search">
+                 <datalist id="cursos">
+                     <option value="Pyton">
+                     <option value="Excel">
+                 </datalist>
+                 <input type="text" name="cursobuscado" list="cursos" placeholder="Buscar curso" class="search"> 
+                 <button> <i class="fas fa-search"></i></button> 
+              </form>
             </article>
 
-            <article>
-                <img  class="carrito" src="img/carrito-de-compras.png" alt="Carrito">
-                 <!--<img class="cantidad-carrito" src="img/numero-carrito.png" alt="Cantidad Carrito">-->
-                 <p class="cantidad-carrito" id="contador">0</p>
+            <article class="contenedor-carrito">
+                <div class="carrito-de-compras">
+                    <img  class="carrito" src="img/carrito-de-compras.png" alt="Carrito">
+                    <p class="cantidad-carrito" id="contador">0</p>               
+                </div>                
             </article>
         </section>
 
@@ -46,7 +53,8 @@
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-        <div class="separador2"></div>
+        <a class="desplegable"></a>
+        <div class="separador2"></div> 
     </header>
     <main>
         <div class="contenedor-detalle">

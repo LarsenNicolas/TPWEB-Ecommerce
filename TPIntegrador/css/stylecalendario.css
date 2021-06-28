@@ -1,0 +1,27 @@
+.titulo{
+    text-align: center;
+    margin: 1em;
+    font-family: 'Oswald', sans-serif;
+    color: #63708d; 
+}
+h2{
+    font-size: 1.8em;
+}
+
+body{
+    font-size: 70%;
+}
+ @media screen and (min-width:47em){
+     body{
+         font-size: 85%;
+     }
+ }
+ @media screen and (min-width:60em){
+     body{
+         font-size: 130%;
+     }
+ }
+#calendario{
+     width: 80%;
+     margin: auto;
+ }

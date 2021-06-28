@@ -6,6 +6,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*---------------------------------------------Responsive Fuente-----------------------------------------------------------------*/
+h3{
+    font-size:  1.4em;
+}
+p{
+    font-size: 1.2em;
+}
+body{
+    font-size: 70%;
+}
+@media screen and (min-width:47em){
+    body{
+        font-size:85%;
+    }
+}
+@media screen and (min-width:60em){
+    body{
+        font-size: 130%;
+    }
+}
+
+
 body{
     background-image:url(../img/fondo-blanco.jpg);
     background-size: 100%;
@@ -15,26 +38,42 @@ body{
 
 h2{
     box-sizing: border-box;
-    font-size: 25px;
     color: #63708d;
 }
 
 h3 {
     box-sizing: border-box;
-    font-size: 20px;
     color: #63708d;
+}
+
+.carrito-de-compras{
+    margin-right: 2em;
+    position: relative;
+}
+
+.cantidad-carrito{
+   font-size: 0.7em;
+    position: absolute;
+    top: -20px;
+    left: 4px;
+    background: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2px;
 }
 
 .contenedor-header{
     background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(142,169,191,0.8519782913165266) 100%, rgba(0,212,255,1) 100%);
-    font-size: 16px;
     color: #fff; 
     padding: 15px;
     display: flex;
-    flex-direction: row;
-    Justify-content: space-between;
+    justify-content: space-between;
     align-items:center;
-    max-width: 100%;
 }
 
 .search-container {
@@ -48,14 +87,15 @@ h3 {
 
 .carrito{
     width: 30px;
-    margin-right: 20px;
-    position: relative;
+    position: absolute;
+    z-index: 50;
 }
 
 .contenedor-buscador{
     display: flex;
     height: 42px;
     position: relative;
+    width: 500px;
 }
 
 .boton-buscador{
@@ -79,6 +119,7 @@ h3 {
 }
 
 .data-list-input{
+    text-align: center;
     width: 100%;
     border-radius: 20px;
 }
@@ -87,15 +128,7 @@ h3 {
     display: none;
 }
 
-.cantidad-carrito{
-    background-size: 10px;
-    width: 20px;
-    position: absolute;
-    display: block;
-    top: 55px;   
-    right: 10px;
-    ;
-}
+
 
 .separador{
     background-color: #000;
@@ -145,6 +178,18 @@ a.desplegable:hover{
     display:none;
 }
 
+.contenedor-pasos-cursos, .contenedor-cursos-iniciales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 1.5em;
+}
+
+.contenedor-cursos-iniciales img{
+    margin-bottom: 1em;
+}
+
 @media screen and (min-width:47em){
     .menu ul{
         display: flex;
@@ -185,18 +230,20 @@ a.desplegable:hover{
         justify-content: space-between;
         padding: 50px;
         max-width: 100%;
-
     }
 
     .img-inicial{
-        width:calc (50%-1em);
+        margin-bottom: 0.5em;
+        width: calc(50% - 1em);
     }
+
+
 }
 
 @media screen and (min-width:60em){
 
     .img-inicial{
-        width:calc(33%-1em);
+        width: calc(25% - 1em);
     }
 }
 
@@ -230,31 +277,30 @@ a.desplegable:hover{
 }*/
 
 @media screen and (min-width:47em){
-    .contenedor-pasos-cursos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: center;
+    
 
-    }
-
-    article{
-        width:calc (50%-1em);
+    .contenedor-header article{
+        width:calc(50% - 1em);
+        display: contents;
     }
 }
 
 @media screen and (min-width:60em){
 
-    article{
-        width:calc(33%-1em);
+    .contenedor-header article{
+        width:calc(33% - 1em);
+        display: contents;
     }
 }
 
 
 
 .steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(206, 214, 242);
-    width: calc(33% - 100px);
+    width: calc(33% - 1em);
     padding: 50px;
     border: solid linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(142,169,191,0.8519782913165266) 100%, rgba(0,212,255,1) 100%);;
     border-radius: 20px;
@@ -297,6 +343,7 @@ a.desplegable:hover{
     max-width: 100%;
     opacity: 0.8;
     border-radius: 30px;
+    margin-bottom: 0.5em;
   }
 
 .destacados-item:hover {
@@ -416,6 +463,10 @@ a.desplegable:hover{
     max-width: 100%;
     }
 
+.contenedor-mediosDePago{
+    position: relative;
+}
+
 .visa{
     width: 100px;
     margin-right: 10px;
@@ -442,7 +493,7 @@ a.desplegable:hover{
     display: block;
     font-size: 30px;
     position: absolute;
-    left: 400px;
+    left: -40px;
 }
 
 .flecha-right-tarjeta{
@@ -450,7 +501,7 @@ a.desplegable:hover{
     display: block;
     font-size: 30px;
     position: absolute;
-    right:  400px;
+    right: -30px;
 
 }
 

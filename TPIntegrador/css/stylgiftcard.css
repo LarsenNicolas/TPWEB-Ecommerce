@@ -3,6 +3,8 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .columna-vista, .columna-personalizacion{
@@ -18,7 +20,7 @@
 }
 
 .cuadro-previa h3{
-	font-size: 30px;
+	font-size: 1.8em;
 }
 
 .texto-previa{
@@ -29,7 +31,7 @@
 .texto-previa p{
 	padding: 5px 15px;
     text-align: center;
-    width: 50%;
+    width: 100%;
 }
 
 .precio-vista{
@@ -81,23 +83,20 @@ input[type="radio"] {
 }
 
 .selec-circulo .veinte{
-	font-size: 20px;
+	font-size: 1.25em;
 }
 .selec-circulo .veintiocho{
-	font-size: 21px;
+	font-size: 1.3em;
 }
 .selec-circulo .treintaydos{
-	font-size: 22px;
+	font-size: 1.35em;
 }
 .selec-circulo .cuarentayocho{
-	font-size: 23px;
-}
-.selec-circulo .sesenta{
-	font-size: 24px;
+	font-size: 1.4em;
 }
 
 .selec-circulo .sesenta{
-	font-size: 24px;
+	font-size: 1.5em;
 }
 
 .ubicacion-cuadrado-padre{
@@ -161,7 +160,7 @@ height: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1em;
   margin: 4px 2px;
   cursor: pointer;
   margin-bottom: 30px;
@@ -182,4 +181,23 @@ height: 8px;
 
 .menu-inferior h3{
     margin-bottom: 10px;
+}
+
+@media screen and (min-width:60em){
+
+  .contenedor-gift{
+    flex-direction: row;
+    align-items: start;
+
+  }
+
+}
+
+ @media screen and (min-width:47em){
+  .texto-previa p {
+    width: 50%;
+}
+ }
+
+
 }

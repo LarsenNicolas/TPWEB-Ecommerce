@@ -18,18 +18,20 @@
             </article>
 
             <article class="search-container">
-                <form action="" method="get" class="contenedor-buscador">
-                    <input list="tipo-de-cursos" name="tipo-de-cursos" placeholder=" Buscar" class="data-list-input"/>
-                    <a href="detalle.html" class="boton-buscador"></a>
-                  </form>
+               <form action="#" method="get" class="search">
+                 <datalist id="cursos">
+                     <option value="Pyton">
+                     <option value="Excel">
+                 </datalist>
+                 <input type="text" name="cursobuscado" list="cursos" placeholder="Buscar curso" class="search"> 
+                 <button> <i class="fas fa-search"></i></button> 
+              </form>
             </article>
 
             <article class="contenedor-carrito">
                 <div class="carrito-de-compras">
                     <img  class="carrito" src="img/carrito-de-compras.png" alt="Carrito">
-
-                    <p class="cantidad-carrito" id="contador">0</p>
-               
+                    <p class="cantidad-carrito" id="contador">0</p>               
                 </div>                
             </article>
         </section>

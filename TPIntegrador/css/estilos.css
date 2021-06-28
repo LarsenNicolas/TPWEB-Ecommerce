@@ -76,9 +76,6 @@ h3 {
     align-items:center;
 }
 
-.search-container {
-    width: 30%;
-}
 
 .logo{
     width:  100px; 
@@ -91,41 +88,25 @@ h3 {
     z-index: 50;
 }
 
-.contenedor-buscador{
+
+.search {
     display: flex;
-    height: 42px;
-    position: relative;
-    width: 500px;
-}
-
-.boton-buscador{
-    background-image: url(../img/lupa.png);
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    top: 5px;
-    right: 12px;
-    background-size: 27px 27px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.boton-buscador:hover {
-    transform: scale(1.2);
-}
-
-.data-list-input{
-    text-align: center;
     width: 100%;
-    border-radius: 20px;
 }
 
-.data-list-input::-webkit-calendar-picker-indicator {
-    display: none;
+.search input {
+    height: 2.5em;
+    padding: 0.2em 0.3em 0.2em 2em;
+    border: 0.22em solid #fff;
+    border-radius: 1em 0em 0em 1em;
+}
+
+.search button {
+    width: 27%;
+    height: 2.5em;
+    border: 0.3px solid #fff;
+    padding: 0.2em;
+    border-radius: 0em 1em 1em 0em;
 }
 
 
@@ -276,22 +257,7 @@ a.desplegable:hover{
     align-content: center;
 }*/
 
-@media screen and (min-width:47em){
-    
 
-    .contenedor-header article{
-        width:calc(50% - 1em);
-        display: contents;
-    }
-}
-
-@media screen and (min-width:60em){
-
-    .contenedor-header article{
-        width:calc(33% - 1em);
-        display: contents;
-    }
-}
 
 
 

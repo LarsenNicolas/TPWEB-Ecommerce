@@ -38,7 +38,7 @@ $(document).ready(function(){
    
     $(".form-container .delete").click(function(e){
       var cantidad = $(".row-filas").toArray().length;
-      if(cantidad>1){
+      if(cantidad>3){
         $(this).parent().remove();
       } 
        e.preventDefault(); 

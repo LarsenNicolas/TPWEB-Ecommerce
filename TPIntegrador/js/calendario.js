@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
               start: '2021-06-20'
           },
           {
-              title: 'HTML',
+              title: 'HTML-CSS',
               start: '2021-06-25',
               end: '2021-06-26'
           },

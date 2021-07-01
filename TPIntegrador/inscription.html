@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/inscription.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="js/jquery-3.5.1.min.js"></script>
+         <script src="js/index.js"></script>
 
         <title>FormAte</title>
     </head>
@@ -60,33 +62,19 @@
                 <article class="container-art">
                     <h2> Inscripcion - {Titulo del curso} </h2>
                     <form action="" method="post" class="form-container">
+                    
                         <div class="row">
                             <p class="col-4">Apellido y nombre</p>
                             <p class="col-4">Numero de documento</p>
                             <p class="col-4">E mail</p>
                             <p class="col-4 xs"></p>
                         </div>
-                        <div class="row">
+                        <div class="row-filas">
                             <input type="text" class="col-4 input-text"/>
                             <input type="text" class="col-4 input-text"/>
                             <input type="text" class="col-4 input-text"/>
-                            <button class="delete col-4 xs">-</button>
-                        </div>
-                        <div class="row">
-                            <input type="text" class="col-4 input-text"/>
-                            <input type="text" class="col-4 input-text"/>
-                            <input type="text" class="col-4 input-text"/>
-                            <button class="delete col-4 xs">-</button>
-                        </div>
-                        <div class="row">
-                            <input type="text" class="col-4 input-text"/>
-                            <input type="text" class="col-4 input-text"/>
-                            <input type="text" class="col-4 input-text"/>
-                            <button class="delete col-4 xs">-</button>
-                        </div>
-                        <div class="row">
-                            <button class="add col-4 xs">+</button>
-                            <p class="col-4">Agregar persona</p>
+                            <button class="delete">-</button>
+                            <button class="add">+</button>
                         </div>
                         <div class="row">
                             <p class="price-item-inscription col-4">$12000</p>

@@ -9,7 +9,7 @@
     justify-content: space-between;
 }
 
-.row {
+.row, .row-filas {
     display: flex;
     flex-direction: row;
     margin: 15px 0px 15px 0px;
@@ -47,6 +47,7 @@ h2{
     text-align: center;
     align-self: center;
     cursor: pointer;
+    margin-right: 1em;
 }
 
 .delete:hover {
@@ -76,3 +77,4 @@ h2{
     width: 10%;
     align-self: center;
 }
+

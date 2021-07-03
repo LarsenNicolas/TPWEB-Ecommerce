@@ -24,6 +24,7 @@ $(document).ready(function(){
 
     var contador=0;
     $(".button").click(function(){
+        toastr.success("Curso agregado al carrito de compras!");
         contador++;
         $("#contador").text(contador);
      });

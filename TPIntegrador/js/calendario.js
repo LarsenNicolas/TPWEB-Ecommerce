@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('contador').textContent = sessionStorage.getItem('carrito');
+
     var calendarEl = document.getElementById('calendario');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -32,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
 
       ]
-  
+
     });
     calendar.render();
-  });
+});

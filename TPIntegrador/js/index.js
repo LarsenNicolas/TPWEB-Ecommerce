@@ -1,10 +1,9 @@
-$(document).ready(function(){ 
+$(document).ready(function(){
 
-    if(!localStorage.getItem('carrito')){
-        $("#contador").text('0');
-    }else{
-        $("#contador").text(localStorage.getItem('carrito'));
+    if (!sessionStorage.getItem('isStarted')) {
+        sessionStorage.setItem('carrito', 0);
     }
+    $("#contador").text(sessionStorage.getItem('carrito'));
 
 
     $("a.desplegable").click(function(){
@@ -22,11 +21,14 @@ $(document).ready(function(){
         }
     });
 
-    var contador=0;
     $(".button").click(function(){
-        toastr.success("Curso agregado al carrito de compras!");
-        contador++;
-        $("#contador").text(contador);
+        sessionStorage.setItem('isStarted', true);
+        toastr.success("Curso agregado al carrito de compras!", "Activated", {timeout: 2000});
+        let contador = sessionStorage.getItem('carrito');
+        console.log("El contador es :" + contador);
+        console.log("El contador es :" + contador++);
+        sessionStorage.setItem('carrito', contador++);
+        $("#contador").text(sessionStorage.getItem('carrito'));
      });
 
 
@@ -49,7 +51,7 @@ $(document).ready(function(){
         contador++;
         $("#contador").text(contador);
         var cantidadCompras = $("#contador").text();
-        localStorage.setItem('carrito',cantidadCompras);
+        sessionStorage.setItem('carrito',cantidadCompras);
      });
 
     $("#titulo-contendido").click(function(){

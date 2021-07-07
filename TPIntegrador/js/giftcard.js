@@ -31,14 +31,20 @@ function setAmountUbicationBottom() {
 $(document).ready(function () {
     $("#monto-input").keyup(function () {
         var value = $(this).val();
-        $("#monto").text( '$ ' + value);
+        $("#monto").text(value);
     });
 
     $("#cursoDe").keyup(function () {
         var value = $(this).val();
         $("#curso").text(value);
     });
+
+    $("#monto-real-input").keyup(function () {
+        var value = $(this).val();
+        $("#monto-real").text( '$ ' + value);
+    });
 });
+
 
 //○ Al ingresar el título del curso el mismo se debe mostrar en la previsualización.
 // ○ Al seleccionar un color se debe modificar el color del texto del título del evento y la

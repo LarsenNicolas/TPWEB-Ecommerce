@@ -33,13 +33,15 @@ $(document).ready(function () {
         var value = $(this).val();
         $("#monto").text( '$ ' + value);
     });
+
+    $("#cursoDe").keyup(function () {
+        var value = $(this).val();
+        $("#curso").text(value);
+    });
 });
 
 //○ Al ingresar el título del curso el mismo se debe mostrar en la previsualización.
 // ○ Al seleccionar un color se debe modificar el color del texto del título del evento y la
 // fecha y hora de la invitación.
-// ○ Al cambiar el tamaño de fuente se debe visualizar dicho cambio sobre la Giftcard.
-// ○ Al agregar el monto se debe visualizar en la invitación.
 // ○ Al cambiar la ubicación se debe modificar la ubicación de la fecha y hora en la
 // invitación.
-// ○ Al cambiar el fondo se debe modificar el color de fondo de la invitación.

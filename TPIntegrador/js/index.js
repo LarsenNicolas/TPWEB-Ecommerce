@@ -75,6 +75,7 @@ $(document).ready(function(){
         }
         
      });
+<<<<<<< HEAD
 
 
     $("#cerrarPopup").click(function(e){
@@ -110,4 +111,6 @@ $(document).ready(function(){
      
 
 
+=======
+>>>>>>> 880a1367af7f8ebc6a188ebbf09a7efae6c68968
 });

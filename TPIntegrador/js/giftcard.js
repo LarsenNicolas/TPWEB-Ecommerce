@@ -31,15 +31,30 @@ function setAmountUbicationBottom() {
 $(document).ready(function () {
     $("#monto-input").keyup(function () {
         var value = $(this).val();
+<<<<<<< HEAD
         $("#monto").text( '$ ' + value);
+=======
+        $("#monto").text(value);
+>>>>>>> 880a1367af7f8ebc6a188ebbf09a7efae6c68968
     });
 
     $("#cursoDe").keyup(function () {
         var value = $(this).val();
         $("#curso").text(value);
     });
+<<<<<<< HEAD
 });
 
+=======
+
+    $("#monto-real-input").keyup(function () {
+        var value = $(this).val();
+        $("#monto-real").text( '$ ' + value);
+    });
+});
+
+
+>>>>>>> 880a1367af7f8ebc6a188ebbf09a7efae6c68968
 //○ Al ingresar el título del curso el mismo se debe mostrar en la previsualización.
 // ○ Al seleccionar un color se debe modificar el color del texto del título del evento y la
 // fecha y hora de la invitación.

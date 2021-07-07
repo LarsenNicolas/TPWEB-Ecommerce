@@ -1,9 +1,14 @@
 $(document).ready(function(){
 
 
+    if(sessionStorage.getItem('carrito') == null || sessionStorage.getItem('carrito') == ''){
+      $("#contador").text(0);
+    }else{
 
+       $("#contador").text(sessionStorage.getItem('carrito'));
+    }
     
-    $("#contador").text(sessionStorage.getItem('carrito'));
+   
 
 
 
@@ -31,12 +36,14 @@ $(document).ready(function(){
 
 
     $(".form-container .add").click(function(e){
+       e.preventDefault(); 
+
       var montoActual = parseInt($("#montoTotal").text());
       montoActual = montoActual +100;
       $("#montoTotal").text(montoActual);
       var clonar=$(this).parent().clone(true);      
       $(this).parent().after(clonar); 
-      e.preventDefault(); 
+      e.preventDefault();
     });
     
    
@@ -48,16 +55,15 @@ $(document).ready(function(){
       montoActual = montoActual - 100;
       $("#montoTotal").text(montoActual);
       } 
-       e.preventDefault(); 
+       
     });
 
     $(".inscripcion").click(function(){
-      var contador = 0;
+      var contador = parseInt($("#contador").text());
         contador++;
       
         $("#contador").text(contador);
         var cantidadCompras = $("#contador").text();
-        alert(cantidadCompras);
         sessionStorage.setItem('carrito',cantidadCompras);
      });
 
@@ -69,4 +75,40 @@ $(document).ready(function(){
         }
         
      });
+
+
+
+    $("#cerrarPopup").click(function(e){
+      e.preventDefault(); 
+      $("#popup").hide();
+     });
+
+    $("#inscribirseArray").click(function(e){
+      e.preventDefault(); 
+     /* inscriptosArray = $("[name='nombre[]']").toArray();
+      console.log(inscriptosArray);
+
+*/    if($(".primerNombre").val().length > 0 ){
+        $("#popup").show();
+        $("[name='nombre[]']").map(function(){
+
+                $("#inscriptosNombre").append("<p class='nombrepopup'>" + $(this).val() + "</p> ");
+              }).get();
+      $("[name='dni[]']").map(function(){
+                $("#inscriptosDni").append("<p class='dnipopup'>" + $(this).val() + "</p> ");
+              }).get();
+      $("[name='mail[]']").map(function(){
+                $("#inscriptosMail").append("<p class='mailpopup'>" + $(this).val() + "</p> ");
+              }).get();
+      }
+      
+      
+
+    });
+
+
+          
+     
+
+
 });

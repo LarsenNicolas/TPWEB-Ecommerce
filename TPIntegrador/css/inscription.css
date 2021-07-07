@@ -78,3 +78,12 @@ h2{
     align-self: center;
 }
 
+.price-item-inscriptionp {
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    background-size: contain;
+    text-align: center;
+    align-self: center;
+}
+

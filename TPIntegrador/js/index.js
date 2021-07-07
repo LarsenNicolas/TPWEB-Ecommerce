@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
-    if (!sessionStorage.getItem('isStarted')) {
-        sessionStorage.setItem('carrito', 0);
-    }
+
+
+    
     $("#contador").text(sessionStorage.getItem('carrito'));
+
 
 
     $("a.desplegable").click(function(){
@@ -22,17 +23,17 @@ $(document).ready(function(){
     });
 
     $(".button").click(function(){
-        sessionStorage.setItem('isStarted', true);
-        toastr.success("Curso agregado al carrito de compras!", "Activated", {timeout: 2000});
-        let contador = sessionStorage.getItem('carrito');
-        console.log("El contador es :" + contador);
-        console.log("El contador es :" + contador++);
-        sessionStorage.setItem('carrito', contador++);
-        $("#contador").text(sessionStorage.getItem('carrito'));
+        
+        var carritoActual = $("#contador").text();
+        carritoActual++;
+        $("#contador").text(carritoActual);
      });
 
 
     $(".form-container .add").click(function(e){
+      var montoActual = parseInt($("#montoTotal").text());
+      montoActual = montoActual +100;
+      $("#montoTotal").text(montoActual);
       var clonar=$(this).parent().clone(true);      
       $(this).parent().after(clonar); 
       e.preventDefault(); 
@@ -43,14 +44,20 @@ $(document).ready(function(){
       var cantidad = $(".row-filas").toArray().length;
       if(cantidad>3){
         $(this).parent().remove();
+        var montoActual = parseInt($("#montoTotal").text());
+      montoActual = montoActual - 100;
+      $("#montoTotal").text(montoActual);
       } 
        e.preventDefault(); 
     });
 
     $(".inscripcion").click(function(){
+      var contador = 0;
         contador++;
+      
         $("#contador").text(contador);
         var cantidadCompras = $("#contador").text();
+        alert(cantidadCompras);
         sessionStorage.setItem('carrito',cantidadCompras);
      });
 

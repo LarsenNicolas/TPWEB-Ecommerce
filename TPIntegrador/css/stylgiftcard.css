@@ -13,8 +13,7 @@
 
 
 .cuadro-previa{
-	 background-color: #bbb;
-    padding: 160px 0;
+    background-color: #bbb;
     text-align: center;
     position: relative;
 }
@@ -29,18 +28,28 @@
 }
 
 .texto-previa p{
-	padding: 5px 15px;
     text-align: center;
     width: 100%;
 }
 
 .precio-vista{
-	 position: absolute;
-    top: 0px;
-    right: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.precio-vista-down{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    visibility: hidden;
+}
+
+.monto {
     background-color: black;
-    color: white;
     padding: 15px;
+    color: white;
+    width: fit-content;
 }
 
 .gitf-circulo {

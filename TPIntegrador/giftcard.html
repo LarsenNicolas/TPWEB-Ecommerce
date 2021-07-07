@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/giftcard.js"></script>
     <title>FormAte</title>
 </head>
 <body>
@@ -57,43 +58,46 @@
     </header>
     <main class="contenedor-gift">
         <section class="columna-vista">
-           <article class="cuadro-previa">
-                <div class= "precio-vista">
-                    <p>$0000.-</p>
-                </div>
-                <p>GIFT CARD para</p>
-                <h3>DESTINATARIO</h3>               
-           </article>
-           <article class="texto-previa">
-               <p>VISTA PREVIA DE RESULTADO DE PERSONALIZACIÓN</p>
+            <article class="texto-previa">
+                <p>VISTA PREVIA DE RESULTADO DE PERSONALIZACIÓN</p>
+            </article>
+           <article class="cuadro-previa" id="cuadro-previa">
+               <div id="precio-vista" class="precio-vista">
+                   <p id="monto" class="monto" type="text"> $0000 </p>
+               </div>
+                <p>GIFT CARD </p>
+                <h3 id="curso">Curso</h3>
+               <div id="precio-vista-down" class="precio-vista-down">
+                   <p id="monto-down" class="monto" type="text"> $0000 </p>
+               </div>
            </article>
         </section>
         <section class="columna-personalizacion">
            <article class="personalizada">
             <h1>Personalización de Giftcard</h1>      
-            <input type="text">
+            <input id="cursoDe" type="text">
             <div class="gift-fila">
                 <h3>Color</h3>
                 <div class= "selec-circulo">
                     <div>
-                        <div class="gitf-circulo"></div>
-                        <input checked="checked" type="radio" name="color"/> 
+                        <div class="gitf-circulo" style="background-color: grey"></div>
+                        <input onclick="setColorFuente('grey')" checked="checked" type="radio" name="color"/>
                     </div>
                     <div>
-                        <div class="gitf-circulo"></div>
-                        <input  type="radio" name="color"/> 
+                        <div class="gitf-circulo" style="background-color: wheat"></div>
+                        <input onclick="setColorFuente('wheat')" type="radio" name="color"/>
                     </div>
                     <div>
-                        <div class="gitf-circulo"></div>
-                        <input  type="radio" name="color"/> 
+                        <div class="gitf-circulo" style="background-color: yellow"></div>
+                        <input onclick="setColorFuente('yellow')"  type="radio" name="color"/>
                     </div>
                     <div>
-                        <div class="gitf-circulo"></div>
-                        <input  type="radio" name="color"/> 
+                        <div class="gitf-circulo" style="background-color: deepskyblue"></div>
+                        <input onclick="setColorFuente('deepskyblue')" type="radio" name="color"/>
                     </div>
                     <div>
-                        <div class="gitf-circulo"></div>
-                        <input  type="radio" name="color"/> 
+                        <div class="gitf-circulo" style="background-color: red"></div>
+                        <input onclick="setColorFuente('red')"  type="radio" name="color" />
                     </div>
                 </div>                
             </div>
@@ -102,30 +106,30 @@
                 <div class= "selec-circulo">
                     <div>
                         <p class="veinte">20px</p>
-                        <input checked="checked" type="radio" name="fuente"/> 
+                        <input onclick="setFuente('20px')" checked="checked" type="radio" name="fuente"/>
                     </div>
                     <div>
                         <p class="veintiocho">28px</p>
-                        <input  type="radio" name="fuente"/> 
+                        <input onclick="setFuente('28px')"  type="radio" name="fuente"/>
                     </div>
                     <div>
                         <p class="treintaydos">32px</p>
-                        <input  type="radio" name="fuente"/> 
+                        <input onclick="setFuente('32px')"  type="radio" name="fuente"/>
                     </div>
                     <div>
                         <p class="cuarentayocho">48px</p>
-                        <input  type="radio" name="fuente"/> 
+                        <input onclick="setFuente('48px')"  type="radio" name="fuente"/>
                     </div>
                     <div>
                         <p class="sesenta">60px</p>
-                        <input  type="radio" name="fuente"/> 
+                        <input onclick="setFuente('60px')"  type="radio" name="fuente"/>
                     </div>
                 </div>
                 
             </div>
             <div class="gift-monto">
-                <h3>Monto$</h3>
-                <input type="text">                
+                <h3>Monto</h3>
+                <input id="monto-input" type="text">
             </div>
              <div class="gift-fila">
                 <h3>Ubicacion</h3>
@@ -134,19 +138,19 @@
                         <div class = "ubicacion-cuadrado-padre">
                             <div class="ubicacion-cuadrado-hijo1"></div>
                         </div>
-                        <input checked="checked" type="radio" name="ubicacion"/> 
+                        <input onclick="setAmountUbicationBottom()"   checked="checked" type="radio" name="ubicacion"/>
                     </div>
                      <div>
                         <div class = "ubicacion-cuadrado-padre">
                             <div class="ubicacion-cuadrado-hijo2"></div>
                         </div>
-                        <input type="radio" name="ubicacion"/> 
+                        <input onclick="setAmountUbicationLeft()"  type="radio" name="ubicacion"/>
                     </div>
                      <div>
                         <div class = "ubicacion-cuadrado-padre">
                             <div class="ubicacion-cuadrado-hijo3"></div>
                         </div>
-                        <input type="radio" name="ubicacion"/> 
+                        <input onclick="setAmountUbicationRight()" type="radio" name="ubicacion"/>
                     </div>
                                      
                 </div>                
@@ -155,34 +159,34 @@
                 <h3>Fondo</h3>
                 <div class= "selec-circulo">
                     <div>
-                        <div class = "ubicacion-cuadrado">
+                        <div class = "ubicacion-cuadrado" style="background-color: grey">
                            
                         </div>
-                        <input checked="checked" type="radio" name="fondo"/> 
+                        <input onclick="setColorFondo('grey')" checked="checked" type="radio" name="fondo"/>
                     </div>
                      <div>
-                        <div class = "ubicacion-cuadrado">
+                        <div class = "ubicacion-cuadrado" style="background-color: wheat">
                            
                         </div>
-                        <input type="radio" name="fondo"/> 
+                        <input onclick="setColorFondo('wheat')" type="radio" name="fondo"/>
                     </div>
                      <div>
-                        <div class = "ubicacion-cuadrado">
+                        <div class = "ubicacion-cuadrado" style="background-color: yellow">
                             
                         </div>
-                        <input type="radio" name="fondo"/> 
+                        <input onclick="setColorFondo('yellow')" type="radio" name="fondo"/>
                     </div>
                     <div>
-                        <div class = "ubicacion-cuadrado">
+                        <div class = "ubicacion-cuadrado" style="background-color: deepskyblue">
                             
                         </div>
-                        <input type="radio" name="fondo"/> 
+                        <input onclick="setColorFondo('deepskyblue')" type="radio" name="fondo"/>
                     </div>
                     <div>
-                        <div class = "ubicacion-cuadrado">
+                        <div class = "ubicacion-cuadrado" style="background-color: red">
                             
                         </div>
-                        <input type="radio" name="fondo"/> 
+                        <input onclick="setColorFondo('red')" type="radio" name="fondo"/>
                     </div>                                     
                 </div>                
             </div>

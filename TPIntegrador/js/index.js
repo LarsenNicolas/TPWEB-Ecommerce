@@ -36,12 +36,14 @@ $(document).ready(function(){
 
 
     $(".form-container .add").click(function(e){
+       e.preventDefault(); 
+
       var montoActual = parseInt($("#montoTotal").text());
       montoActual = montoActual +100;
       $("#montoTotal").text(montoActual);
       var clonar=$(this).parent().clone(true);      
       $(this).parent().after(clonar); 
-      e.preventDefault(); 
+      e.preventDefault();
     });
     
    
@@ -53,7 +55,7 @@ $(document).ready(function(){
       montoActual = montoActual - 100;
       $("#montoTotal").text(montoActual);
       } 
-       e.preventDefault(); 
+       
     });
 
     $(".inscripcion").click(function(){
@@ -73,6 +75,7 @@ $(document).ready(function(){
         }
         
      });
+
 
     $("#cerrarPopup").click(function(e){
       e.preventDefault(); 
